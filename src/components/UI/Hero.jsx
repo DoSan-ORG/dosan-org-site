@@ -7,7 +7,7 @@ function Hero(){
     return (
         <section className={`position-relative d-flex align-items-center min-vh-100 py-5 overflow-hidden ${theme === 'dark' ? 'bg-dark' : ''}`}>
             <span className={`position-absolute top-0 start-0 d-none w-100 h-100 bg-secondary opacity-75 ${theme === 'dark' ? 'd-dark-mode-block': ''}`}></span>
-            <div className={`container position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3 ${theme === 'dark' ? 'dark-mode': ''}`}>
+            <div className={`container position-relative mt-5 mb-lg-5 mb-md-4 mb-3 pt-3 pb-xl-3`}>
                 <div className="row gy-5">
                 <div className="col-xl-5 col-lg-6">
                     <div className="position-relative zindex-5 text-lg-start text-center">
