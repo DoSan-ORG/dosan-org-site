@@ -15,9 +15,9 @@ function Header(){
     return (
         <header className={`header navbar navbar-expand-lg position-absolute navbar-sticky ${theme === 'dark' ? 'navbar-dark' : ''}`}>
             <div className="container px-3">
-                <a href="/home" className="navbar-brand pe-3">
-                <img src={logoImage} width="100" alt="DosanOrg" />
-                </a>
+                <NavLink to="/home" className="navbar-brand pe-3">
+                    <img src={logoImage} width="100" alt="DosanOrg" />
+                </NavLink>
                 <div id="navbarNav" className={`offcanvas offcanvas-end ${theme === 'dark' ? 'bg-dark': ''}`}>
                     <div className="offcanvas-header border-bottom">
                         <h5 className="offcanvas-title text-white">Menu</h5>
