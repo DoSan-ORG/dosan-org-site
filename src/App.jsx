@@ -1,7 +1,3 @@
-import './assets/vendor/boxicons/css/boxicons.min.css'
-import './assets/vendor/swiper/swiper-bundle.min.css'
-import './assets/css/theme.min.css'
-
 import './assets/js/theme.min.js'
 import HomePage from './pages/Home'
 import AboutPage from './pages/About'
