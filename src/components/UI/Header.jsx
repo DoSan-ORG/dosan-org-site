@@ -41,7 +41,7 @@ function Header(){
                         </ul>
                     </div>
                 </div>
-                <div className={`pe-lg-1 ms-auto me-4 ${theme === 'dark' && 'dark-mode'}`}>
+                <div className={`pe-lg-1 ms-auto me-4`}>
                     <div className="form-check form-switch mode-switch" data-bs-toggle="mode" >
                         <input type="checkbox" className="form-check-input" id="theme-mode" 
                             style={{cursor: 'pointer'}} 
