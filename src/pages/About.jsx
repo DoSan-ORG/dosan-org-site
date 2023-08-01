@@ -5,6 +5,7 @@ import hero1Image from '../assets/images/about/hero/01.jpg';
 import hero2Image from '../assets/images/about/hero/02.jpg';
 import hero3Image from '../assets/images/about/hero/03.jpg';
 import hero4Image from '../assets/images/about/hero/04.jpg';
+import { Link } from 'react-router-dom';
 
 function AboutPage(){
     const theme = localStorage.getItem('theme');
@@ -25,7 +26,7 @@ function AboutPage(){
                         <nav className="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
                         <ol className="breadcrumb mb-0">
                             <li className="breadcrumb-item">
-                            <a href="/home"><i className="bx bx-home-alt fs-lg me-1"></i>Home</a>
+                            <Link to="/home"><i className="bx bx-home-alt fs-lg me-1"></i>Home</Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">About Us</li>
                         </ol>

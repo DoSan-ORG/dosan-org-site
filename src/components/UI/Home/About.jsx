@@ -5,6 +5,7 @@ import forbesLightImage from '../../../assets/images/landing/software-agency-3/a
 import forbesDarkImage from '../../../assets/images/landing/software-agency-3/awards/forbes-dark.png';
 import awardsLightsImage from '../../../assets/images/landing/software-agency-3/awards/awwwards-light.png';
 import awardsDarkImage from '../../../assets/images/landing/software-agency-3/awards/awwwards-dark.png';
+import { Link } from 'react-router-dom';
 
 function About(){
     return (
@@ -40,7 +41,7 @@ function About(){
                         className="d-dark-mode-block d-none" />
                     </div>
                     </div>
-                    <a href="#" className="btn btn-lg btn-outline-primary">More about us</a>
+                    <Link to="/about" className="btn btn-lg btn-outline-primary">More about us</Link>
                 </div>
                 </div>
             </div>

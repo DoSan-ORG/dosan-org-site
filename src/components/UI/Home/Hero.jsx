@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import heroImage from '../../../assets/images/hero-bg.png';
 
 function Hero(){
@@ -15,7 +16,7 @@ function Hero(){
                     <p className="mb-4 pb-lg-3 pb-md-2">
                         <span className={`me-2 ${theme === 'dark' ? 'text-light': ''}`}>We are the Top Software solutions</span>
                     </p>
-                    <a href="/contact-us" className="btn btn-lg btn-primary">Start your project</a>
+                    <Link to="/contact-us" className="btn btn-lg btn-primary">Start your project</Link>
                     </div>
                 </div>
                 <div className="col-lg-6 offset-xl-1">
