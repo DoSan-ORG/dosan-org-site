@@ -1,20 +1,23 @@
 import { NavLink } from 'react-router-dom';
 
 function Footer() {
+    const theme = localStorage.getItem('theme');
     const currentYear = new Date().getFullYear();
+
     return (
-        <footer className="footer position-relative bg-dark pt-5 pb-4 pb-lg-5">
-            <span className="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
-            <div className="position-relative container dark-mode pt-lg-4">
+        <footer className={`footer position-relative pt-5 pb-4 pb-lg-5 ${theme === 'dark' ? 'bg-dark': ''}`}>
+            <span className={`position-absolute top-0 start-0 d-none w-100 h-100 bg-secondary opacity-75 ${theme === 'dark' ? 'd-dark-mode-block': ''}`}></span>
+            <div className={`position-relative container pt-lg-4 ${theme === 'dark' ? 'dark-mode': ''}`}>
                 <div className="row pb-5">
                     <div className="col-lg-4 col-md-6">
                         <div className="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
                             DosanOrg
                         </div>
-                        <p className="fs-sm text-light opacity-70 pb-lg-3 mb-4">Welcome to DosanOrg, your destination for innovative
-                            software solutions. We develop customized, scalable software that transforms businesses. Our services
-                            include software development, application integration, cloud solutions, data analytics, and cybersecurity.
-                            Partner with us to unlock your digital potential and thrive in the modern era.</p>
+                        <p className={`fs-sm opacity-70 pb-lg-3 mb-4 ${theme === 'dark' ? 'text-light' : 'text-dark'}`}>
+                            Welcome to DosanOrg, your destination for innovative software solutions. We develop customized, scalable software 
+                            that transforms businesses. Our services include software development, application integration, cloud solutions, data analytics, and cybersecurity.
+                            Partner with us to unlock your digital potential and thrive in the modern era.
+                        </p>
                         <form className="needs-validation" noValidate>
                             <label htmlFor="subscr-email" className="form-label">Subscribe to our newsletter</label>
                             <div className="input-group">
@@ -71,7 +74,7 @@ function Footer() {
                     </div>
                 </div>
                 <p className="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-                    <span className="text-light opacity-50">&copy; All rights reserved {currentYear}</span>
+                    <span className={`opacity-50 ${theme === 'dark' ? 'text-light' : 'text-dark'}`}>&copy; All rights reserved {currentYear}</span>
                 </p>
             </div>
         </footer>
