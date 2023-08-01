@@ -1,4 +1,3 @@
-import { useSelector } from 'react-redux';
 import  { Navigate, Route, Routes } from "react-router-dom";
 import Header from '../components/UI/Header';
 import Wrapper from '../components/UI/Wrapper';
@@ -9,7 +8,7 @@ import ContactUsPage from './ContactUs'
 import NotFoundPage from './NotFound';
 
 function RootLayout(){
-    const theme = useSelector(state => state.theme.theme);
+    const theme = localStorage.getItem('theme');
 
     return (
         <Wrapper className={`page-wrapper ${theme === 'dark' ? 'dark-mode' : ''}`}>

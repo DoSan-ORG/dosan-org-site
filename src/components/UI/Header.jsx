@@ -4,7 +4,7 @@ import { themeActions } from '../../store/theme';
 import { NavLink } from 'react-router-dom';
 
 function Header(){
-    const theme = useSelector(state => state.theme.theme);
+    const theme = localStorage.getItem('theme');
     const dispatch = useDispatch();
 
     const onSwitchThemeHandler = () => {
@@ -42,8 +42,11 @@ function Header(){
                     </div>
                 </div>
                 <div className={`pe-lg-1 ms-auto me-4 ${theme === 'dark' && 'dark-mode'}`}>
-                    <div className="form-check form-switch mode-switch" data-bs-toggle="mode" onClick={onSwitchThemeHandler}>
-                        <input type="checkbox" className="form-check-input" id="theme-mode" defaultChecked={ theme === 'dark' ? true : false } />
+                    <div className="form-check form-switch mode-switch" data-bs-toggle="mode" >
+                        <input type="checkbox" className="form-check-input" id="theme-mode" 
+                            style={{cursor: 'pointer'}} 
+                            onClick={onSwitchThemeHandler} 
+                            defaultChecked={ theme === 'dark' ? true : false } />
                         <label className="form-check-label d-none d-sm-block" htmlFor="theme-mode">Light</label>
                         <label className="form-check-label d-none d-sm-block" htmlFor="theme-mode">Dark</label>
                     </div>

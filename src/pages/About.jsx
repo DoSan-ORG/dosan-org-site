@@ -5,10 +5,9 @@ import hero1Image from '../assets/images/about/hero/01.jpg';
 import hero2Image from '../assets/images/about/hero/02.jpg';
 import hero3Image from '../assets/images/about/hero/03.jpg';
 import hero4Image from '../assets/images/about/hero/04.jpg';
-import { useSelector } from 'react-redux';
 
 function AboutPage(){
-    const theme = useSelector(state => state.theme.theme);
+    const theme = localStorage.getItem('theme');
 
     return (
         <div>

@@ -1,8 +1,7 @@
-import { useSelector } from 'react-redux';
 import heroImage from '../../../assets/images/hero-bg.png';
 
 function Hero(){
-    const theme = useSelector(state => state.theme.theme);
+    const theme = localStorage.getItem('theme');
     
     return (
         <section className={`position-relative d-flex align-items-center min-vh-100 py-5 overflow-hidden ${theme === 'dark' ? 'bg-dark' : ''}`}>
