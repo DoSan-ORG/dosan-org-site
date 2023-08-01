@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import heroImage from '../../assets/images/hero-bg.png';
+import heroImage from '../../../assets/images/hero-bg.png';
 
 function Hero(){
     const theme = useSelector(state => state.theme.theme);

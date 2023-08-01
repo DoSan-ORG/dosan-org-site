@@ -6,9 +6,7 @@ import './assets/vendor/rellax/rellax.min.js'
 import RootLayout from './pages/Root'
 
 function App(){
-  return (
-    <RootLayout />
-  )
+  return <RootLayout />
 }
 
 export default App

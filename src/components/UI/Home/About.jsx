@@ -1,10 +1,10 @@
-import aboutImage from '../../assets/images/landing/software-agency-1/about-img.jpg';
-import clutchLightImage from '../../assets/images/landing/software-agency-3/awards/clutch-light.png';
-import clutchDarkImage from '../../assets/images/landing/software-agency-3/awards/clutch-dark.png';
-import forbesLightImage from '../../assets/images/landing/software-agency-3/awards/forbes-light.png';
-import forbesDarkImage from '../../assets/images/landing/software-agency-3/awards/forbes-dark.png';
-import awardsLightsImage from '../../assets/images/landing/software-agency-3/awards/awwwards-light.png';
-import awardsDarkImage from '../../assets/images/landing/software-agency-3/awards/awwwards-dark.png';
+import aboutImage from '../../../assets/images/landing/software-agency-1/about-img.jpg';
+import clutchLightImage from '../../../assets/images/landing/software-agency-3/awards/clutch-light.png';
+import clutchDarkImage from '../../../assets/images/landing/software-agency-3/awards/clutch-dark.png';
+import forbesLightImage from '../../../assets/images/landing/software-agency-3/awards/forbes-light.png';
+import forbesDarkImage from '../../../assets/images/landing/software-agency-3/awards/forbes-dark.png';
+import awardsLightsImage from '../../../assets/images/landing/software-agency-3/awards/awwwards-light.png';
+import awardsDarkImage from '../../../assets/images/landing/software-agency-3/awards/awwwards-dark.png';
 
 function About(){
     return (
