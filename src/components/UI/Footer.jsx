@@ -19,11 +19,11 @@ function Footer() {
                             <label htmlFor="subscr-email" className="form-label">Subscribe to our newsletter</label>
                             <div className="input-group">
                                 <input type="email" id="subscr-email" className="form-control rounded-start ps-5" placeholder="Your email"
-                                    required/>
-                                    <i
-                                        className="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
-                                    <div className="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
-                                    <button type="submit" className="btn btn-primary">Subscribe</button>
+                                    required />
+                                <i
+                                    className="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                                <div className="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
+                                <button type="submit" className="btn btn-primary">Subscribe</button>
                             </div>
                         </form>
                     </div>
