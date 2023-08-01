@@ -6,6 +6,7 @@ import AboutPage from './About'
 import ServicesPage from './Services'
 import ContactUsPage from './ContactUs'
 import NotFoundPage from './NotFound';
+import Footer from "../components/UI/Footer";
 
 function RootLayout(){
     const theme = localStorage.getItem('theme');
@@ -24,6 +25,7 @@ function RootLayout(){
                     <Route path="*" element={ <Navigate to="/404" replace />} />
                 </Routes>
             </main>
+            <Footer/>
         </Wrapper>
     );
 }
