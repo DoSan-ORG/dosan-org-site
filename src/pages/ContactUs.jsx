@@ -2,23 +2,20 @@ import React, { useState } from 'react';
 import contactBgImage from '../assets/images/contacts/bg.svg';
 import ContactForm from "../components/UI/ContactForm";
 import ContactModal from "../components/UI/ContactModal";
-
+import { Link, useNavigate } from 'react-router-dom';
 
 function ContactUsPage() {
+    const navigate = useNavigate();
     const [open, setOpen] = useState(false);
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        const form = event.target;
-        form.reportValidity();
-        if (form.checkValidity()) {
-            handleSubmit(event);
-        }
-    };
 
     const handleCloseModal = () => {
         setOpen(false);
+        navigate('/');
     };
+
+    const onShowModalHandler = () => {
+        setOpen(true);
+    }
 
     return (
         <div>
@@ -28,7 +25,7 @@ function ContactUsPage() {
                     <nav className="pt-lg-4" aria-label="breadcrumb">
                         <ol className="breadcrumb mb-0">
                             <li className="breadcrumb-item">
-                                <a href="/home"><i className="bx bx-home-alt fs-lg me-1"></i>Home</a>
+                                <Link to="/home"><i className="bx bx-home-alt fs-lg me-1"></i>Home</Link>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">Contacts</li>
                         </ol>
@@ -42,7 +39,7 @@ function ContactUsPage() {
                             </div>
                         </div>
                         <div className="col-lg-6 offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
-                            <ContactForm handleSubmit={handleSubmit} />
+                            <ContactForm onShowModal={onShowModalHandler} />
                         </div>
                     </div>
                 </div>
