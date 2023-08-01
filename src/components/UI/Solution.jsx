@@ -1,16 +1,17 @@
-import { useState } from 'react';
 import softwareDevImage from '../../assets/images/landing/software-agency-3/icons/01.svg';
 import appDevImage from '../../assets/images/landing/software-agency-3/icons/02.svg';
 import supportMaintenanceImage from '../../assets/images/landing/software-agency-3/icons/03.svg'
 import softwareQaAndTestingImage from '../../assets/images/landing/software-agency-3/icons/04.svg';
 import SolutionItem from './SolutionItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 function Solution(){
-    const [solutions] = useState([
+    const solutions = [
         {
             id: 1,
             title: 'Software Development', 
@@ -35,12 +36,31 @@ function Solution(){
             description: "Your trusted partner for software QA and testing. We ensure the quality and reliability of your software through meticulous testing and analysis, delivering superior user experiences.",
             image: softwareQaAndTestingImage
         }
-    ]);
+    ];
 
     return (
         <section className="container mb-5 pb-lg-5 pb-md-4 pb-3">
             <h2 className="h1 mb-lg-5 mb-4 pb-lg-0 pb-md-2 text-center">Сustom Software Solutions</h2>
-            <Swiper spaceBetween={50} slidesPerView={3}>
+            <Swiper 
+                spaceBetween={24} 
+                navigation={true} 
+                modules={[Navigation]} 
+                centeredSlides={false}
+                centerInsufficientSlides={true}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1
+                    },
+                    500: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 3
+                    },
+                    1200: {
+                        slidesPerView: 4
+                    }
+                }}>
                 { solutions.map((item) => 
                     <SwiperSlide key={item.id}>
                         <SolutionItem item={item} />

@@ -5,7 +5,6 @@ import Wrapper from '../components/UI/Wrapper';
 import HomePage from './Home'
 import AboutPage from './About'
 import ServicesPage from './Services'
-import NewsPage from './News'
 import ContactUsPage from './ContactUs'
 import NotFoundPage from './NotFound';
 
@@ -21,7 +20,6 @@ function RootLayout(){
                     <Route path="/home" element={<HomePage />}/>
                     <Route path="/about" element={<AboutPage />}/>
                     <Route path="/services" element={<ServicesPage />}/>
-                    <Route path="/news" element={<NewsPage />}/>
                     <Route path="/contact-us" element={<ContactUsPage />}/>
                     <Route path="/404" element={ <NotFoundPage /> } />
                     <Route path="*" element={ <Navigate to="/404" replace />} />
