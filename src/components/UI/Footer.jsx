@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <footer className={`footer position-relative pt-5 pb-4 pb-lg-5 ${theme === 'dark' ? 'bg-dark': ''}`}>
-            <span className={`position-absolute top-0 start-0 d-none w-100 h-100 bg-secondary opacity-75 ${theme === 'dark' ? 'd-dark-mode-block': ''}`}></span>
+            <span className={`position-absolute top-0 start-0 d-none w-100 h-100 bg-secondary opacity-75`}></span>
             <div className={`position-relative container pt-lg-4 ${theme === 'dark' ? 'dark-mode': ''}`}>
                 <div className="row pb-5">
                     <div className="col-lg-4 col-md-6">
