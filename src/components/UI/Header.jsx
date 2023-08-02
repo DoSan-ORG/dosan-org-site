@@ -21,8 +21,7 @@ function Header(){
                 <div id="navbarNav" className={`offcanvas offcanvas-end ${theme === 'dark' ? 'bg-dark': ''}`}>
                     <div className="offcanvas-header border-bottom">
                         <h5 className="offcanvas-title text-white">Menu</h5>
-                        <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
+                        <button type="button" className={`btn-close btn-close-${theme === 'dark' ? 'white': 'dark'}`} data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
