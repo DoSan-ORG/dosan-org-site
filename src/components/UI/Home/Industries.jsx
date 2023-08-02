@@ -1,6 +1,3 @@
-import industry1Image from '../../../assets/images/landing/software-agency-3/industries/01.jpg';
-import industry2Image from '../../../assets/images/landing/software-agency-3/industries/02.jpg';
-import industry3Image from '../../../assets/images/landing/software-agency-3/industries/03.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
@@ -17,7 +14,7 @@ function Industries(){
             'cutting-edge software products tailored to the unique needs of the finance and insurance industry.' +
             'With our expertise and innovative approach, we empower businesses to streamline operations, enhance' + 
             'security, and achieve their financial goals.',
-            image: industry1Image
+            image: '/images/industries/01.jpg'
         },
         {
             id: 2,
@@ -26,7 +23,7 @@ function Industries(){
             'cutting-edge software products and services that help startups thrive in the fast-paced digital' +
             'landscape. With our expertise and forward-thinking approach, we empower startups to disrupt markets,' +
             'scale their operations, and achieve remarkable success.',
-            image: industry2Image
+            image: '/images/industries/02.jpg'
         },
         {
             id: 3,
@@ -35,7 +32,7 @@ function Industries(){
             'software products and services that enable businesses to succeed in the competitive world of online' +
             'retail. With our expertise and innovative approach, we help businesses establish a robust online' +
             'presence, drive sales, and deliver exceptional customer experiences.',
-            image: industry3Image
+            image: '/images/industries/03.jpg'
         },
 
     ];

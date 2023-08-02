@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import contactBgImage from '../assets/images/contacts/bg.svg';
 import ContactForm from "../components/UI/ContactForm";
 import ContactModal from "../components/UI/ContactModal";
 import { Link, useNavigate } from 'react-router-dom';
@@ -20,7 +19,7 @@ function ContactUsPage() {
     return (
         <div>
             <section className="bg-size-cover bg-position-bottom-center bg-repeat-0 py-5"
-                style={{ backgroundImage: `url(${contactBgImage})` }}>
+                style={{ backgroundImage: `url(/images/contacts/bg.svg)` }}>
                 <div className="container pt-5 pb-lg-4 pb-xl-5">
                     <nav className="pt-lg-4" aria-label="breadcrumb">
                         <ol className="breadcrumb mb-0">

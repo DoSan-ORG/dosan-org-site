@@ -1,20 +1,11 @@
-import clutchLightImage from '../assets/images/landing/software-agency-3/awards/clutch-light.png';
-import clutchDarkImage from '../assets/images/landing/software-agency-3/awards/clutch-dark.png';
-import heroBgImage from '../assets/images/about/hero-bg.svg';
-import hero1Image from '../assets/images/about/hero/01.jpg';
-import hero2Image from '../assets/images/about/hero/02.jpg';
-import hero3Image from '../assets/images/about/hero/03.jpg';
-import hero4Image from '../assets/images/about/hero/04.jpg';
 import { Link } from 'react-router-dom';
 
 function AboutPage(){
-    const theme = localStorage.getItem('theme');
-
     return (
         <div>
             <section className="position-relative pt-5">
                 <div className="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0"
-                    style={{backgroundImage: `url(${heroBgImage})`}}>
+                    style={{backgroundImage: `url(/images/about/hero-bg.svg)`}}>
                     <div className="d-lg-none" style={{height: '960px'}}></div>
                     <div className="d-none d-lg-block" style={{height: '768px'}}></div>
                 </div>
@@ -38,35 +29,31 @@ function AboutPage(){
                         industries. Our exceptional solutions have earned us prestigious accolades. With expertise and
                         client-centricity, we deliver tailored software that exceeds expectations. Experience the transformative
                         power of our award-winning solutions for your business.</p>
-
-                        { theme === 'dark' && (<img src={clutchDarkImage} className="d-none d-dark-mode-block" width="175" alt="Clutch" />) }
-                        { theme === 'light' && (<img src={clutchLightImage} className=" d-dark-mode-none" width="175" alt="Clutch" />) }
-
                         <div className="row row-cols-3 pt-4 pt-md-5 mt-2 mt-xl-4">
-                        <div className="col">
-                            <h3 className="h2 mb-2">2,480</h3>
-                            <p className="mb-0"><strong>Remote</strong> Sales Experts</p>
-                        </div>
-                        <div className="col">
-                            <h3 className="h2 mb-2">760</h3>
-                            <p className="mb-0"><strong>New Clients</strong> per Month</p>
-                        </div>
-                        <div className="col">
-                            <h3 className="h2 mb-2">1,200</h3>
-                            <p className="mb-0"><strong>Requests</strong> per Week</p>
-                        </div>
+                            <div className="col">
+                                <h3 className="h2 mb-2">2,480</h3>
+                                <p className="mb-0"><strong>Remote</strong> Sales Experts</p>
+                            </div>
+                            <div className="col">
+                                <h3 className="h2 mb-2">760</h3>
+                                <p className="mb-0"><strong>New Clients</strong> per Month</p>
+                            </div>
+                            <div className="col">
+                                <h3 className="h2 mb-2">1,200</h3>
+                                <p className="mb-0"><strong>Requests</strong> per Week</p>
+                            </div>
                         </div>
                     </div>
 
                     <div className="col-lg-6 mt-xl-3 pt-5 pt-lg-4">
                         <div className="row row-cols-2 gx-3 gx-lg-4">
                         <div className="col pt-lg-5 mt-lg-1">
-                            <img src={hero1Image} className="d-block rounded-3 mb-3 mb-lg-4" alt="Image" />
-                            <img src={hero2Image} className="d-block rounded-3" alt="Image" />
+                            <img src="/images/about/01.jpg" className="d-block rounded-3 mb-3 mb-lg-4" alt="Image" />
+                            <img src="/images/about/02.jpg" className="d-block rounded-3" alt="Image" />
                         </div>
                         <div className="col">
-                            <img src={hero3Image} className="d-block rounded-3 mb-3 mb-lg-4" alt="Image" />
-                            <img src={hero4Image} className="d-block rounded-3" alt="Image" />
+                            <img src="/images/about/03.jpg" className="d-block rounded-3 mb-3 mb-lg-4" alt="Image" />
+                            <img src="/images/about/04.jpg" className="d-block rounded-3" alt="Image" />
                         </div>
                         </div>
                     </div>

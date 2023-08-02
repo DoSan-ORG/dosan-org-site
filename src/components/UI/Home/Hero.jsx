@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import heroImage from '../../../assets/images/hero-bg.png';
 
 function Hero(){
     const theme = localStorage.getItem('theme');
@@ -24,7 +23,7 @@ function Hero(){
                     <div className="position-absolute top-50 start-50 translate-middle ratio ratio-1x1"
                         style={{width: '125%', maxWidth: '49.75rem'}}>
                         <div className="p-md-0 p-5">
-                        <img src={heroImage} alt="Shape" className="hero-animation-spin p-md-0 p-5" />
+                        <img src="/images/hero-bg.png" alt="Shape" className="hero-animation-spin p-md-0 p-5" />
                         </div>
                     </div>
                     <div className="position-relative row row-cols-sm-2 row-cols-1 gx-xl-4 gx-lg-3 gx-md-4 gx-3">

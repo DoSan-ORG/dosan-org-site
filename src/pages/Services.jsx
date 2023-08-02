@@ -1,10 +1,3 @@
-
-import csd from '../assets/images/services/icons/cms.svg';
-import rocket from '../assets/images/services/icons/rocket.svg';
-import ma from '../assets/images/services/icons/mobile-app.svg';
-import analytics from '../assets/images/services/icons/analytics.svg';
-import ws from '../assets/images/services/icons/web-search.svg';
-import timer from '../assets/images/services/icons/timer.svg';
 import ServiceItem from '../components/UI/ServiceItem';
 import { Link } from 'react-router-dom';
 
@@ -14,37 +7,37 @@ function ServicesPage() {
             id: 1,
             title: 'Custom Software Development',
             description: "Specializes in custom software development. We create high-quality software solutions, leveraging the latest technologies to bring your ideas to life. With our customer-centric approach and expertise, we empower businesses to achieve digital transformation and drive success.",
-            image: csd
+            image: '/images/services/cms.svg'
         },
         {
             id: 2,
             title: 'Software Integration',
             description: "Turning your app ideas into reality. Our expert team creates captivating, user-friendly mobile apps for iOS and Android. From concept to launch, we deliver seamless experiences that engage your audience.",
-            image: rocket
+            image: '/images/services/rocket.svg'
         },
         {
             id: 3,
             title: 'Mobile App Development',
             description: "Offers reliable support and maintenance services. Our dedicated team ensures your software or application runs smoothly, providing timely updates, bug fixes, and technical assistance. With proactive monitoring and prompt response, we keep your systems optimized, allowing you to focus on your core business.",
-            image: ma
+            image: '/images/services/mobile-app.svg'
         },
         {
             id: 4,
             title: 'Software QA & Testing',
             description: "Your trusted partner for software QA and testing. We ensure the quality and reliability of your software through meticulous testing and analysis, delivering superior user experiences.",
-            image: ws
+            image: '/images/services/web-search.svg'
         },
         {
             id: 5,
             title: 'Project Management',
             description: "Your trusted partner for software QA and testing. We ensure the quality and reliability of your software through meticulous testing and analysis, delivering superior user experiences.",
-            image: timer
+            image: '/images/services/timer.svg'
         },
         {
             id: 6,
             title: 'Business Analytics',
             description: "Your trusted partner for software QA and testing. We ensure the quality and reliability of your software through meticulous testing and analysis, delivering superior user experiences.",
-            image: analytics
+            image: '/images/services/analytics.svg'
         }
     ];
     return (

@@ -1,5 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
-import logoImage from '../../assets/images/logo.png';
+import { useDispatch } from 'react-redux';
 import { themeActions } from '../../store/theme';
 import { NavLink } from 'react-router-dom';
 
@@ -16,7 +15,7 @@ function Header(){
         <header className={`header navbar navbar-expand-lg position-absolute navbar-sticky ${theme === 'dark' ? 'navbar-dark' : ''}`}>
             <div className="container px-3">
                 <NavLink to="/home" className="navbar-brand pe-3">
-                    <img src={logoImage} width="100" alt="DosanOrg" />
+                    <img src="/logo.png" width="100" alt="DosanOrg" />
                 </NavLink>
                 <div id="navbarNav" className={`offcanvas offcanvas-end ${theme === 'dark' ? 'bg-dark': ''}`}>
                     <div className="offcanvas-header border-bottom">
