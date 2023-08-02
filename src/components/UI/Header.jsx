@@ -25,16 +25,16 @@ function Header(){
                     </div>
                     <div className="offcanvas-body">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown" data-bs-dismiss="offcanvas">
                                 <NavLink to="/home" className="nav-link">Home</NavLink>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown" data-bs-dismiss="offcanvas">
                                 <NavLink to="/about" className="nav-link">About Us</NavLink>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className="nav-item dropdown" data-bs-dismiss="offcanvas">
                                 <NavLink to="/services" className="nav-link">Services</NavLink>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" data-bs-dismiss="offcanvas">
                                 <NavLink to="/contact-us" className="nav-link">Contact Us</NavLink>
                             </li>
                         </ul>
