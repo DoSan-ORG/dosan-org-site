@@ -20,7 +20,7 @@ function Header(){
                 </NavLink>
                 <div id="navbarNav" className={`offcanvas offcanvas-end ${theme === 'dark' ? 'bg-dark': ''}`}>
                     <div className="offcanvas-header border-bottom">
-                        <h5 className="offcanvas-title text-white">Menu</h5>
+                        <h5 className={`offcanvas-title text-${theme === 'dark' ? 'white': 'dark'}`}>Menu</h5>
                         <button type="button" className={`btn-close btn-close-${theme === 'dark' ? 'white': 'dark'}`} data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
